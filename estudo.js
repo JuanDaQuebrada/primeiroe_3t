@@ -1,32 +1,41 @@
-let tabuada = 1;
+let tabuada = 3;
 
 function escreva(){
-    document.write("<h1>Tabuada do " + tabuada + "</h1>");
-    document.write( tabuada + " x  1 =" + (tabuada*1)+"<br>");
-    document.write( tabuada + " x  2 =" + (tabuada*2)+"<br>");
-    document.write( tabuada + " x  3 =" + (tabuada*3)+"<br>");
-    document.write( tabuada + " x  4 =" + (tabuada*4)+"<br>");
-    document.write( tabuada + " x  5 =" + (tabuada*5)+"<br>");
-    document.write( tabuada + " x  6 =" + (tabuada*6)+"<br>");
-    document.write( tabuada + " x  7 =" + (tabuada*7)+"<br>");
-    document.write( tabuada + " x  8 =" + (tabuada*8)+"<br>");
-    document.write( tabuada + " x  9 =" + (tabuada*9)+"<br>");
-    document.write( tabuada + " x  10 =" + (tabuada*10)+"<br>");
+    document.write(tabuada + " x 1 = " + (tabuada*1)+"<br>");
+    document.write(tabuada + " x 2 = " + (tabuada*2)+"<br>");
+    document.write(tabuada + " x 3 = " + (tabuada*3)+"<br>");
+    document.write(tabuada + " x 4 = " + (tabuada*4)+"<br>");
+    document.write(tabuada + " x 5 = " + (tabuada*5)+"<br>");
+    document.write(tabuada + " x 6 = " + (tabuada*6)+"<br>");
+    document.write(tabuada + " x 7 = " + (tabuada*7)+"<br>");
+    document.write(tabuada + " x 8 = " + (tabuada*8)+"<br>");
+    document.write(tabuada + " x 9 = " + (tabuada*9)+"<br>");
+    document.write(tabuada + " x 10 = " + (tabuada*10)+"<br>");
 }
 
 function minhaTabuada(){
-    for(let i=1; i <= 10; i++){
-        document.write("Tabuada do " + i + "<br>");
-        for(let j=1; j <= 10; j++){      
-          document.write(tabuada + " x " + i + " = " + (tabuada*i)+"<br>");
+    for(let i=0; i <= 10; i++){
+        document.write( "Tabuada do " + 1 + "<br>");
+        for(let j = 1; j <= 10; j++){
+            document.write(tabuada + " x " + j + " = " + (j*i)+"<br>");
         }
         document.write("<br>");
+    }    
+}
 
+function quadrado(){
+    for(let i = 1; i <= 5; i++){
+        document.write("O quadrado de " + i + " é " + (i*i) + "<br>");
     }
 }
-function quadrado(){
-    for(let i = 20; i <= 30; i++);{
-        document.write("O quadrado de " + i + " é " + (i*1) + "<br>")
+
+function calcula(){
+    let val = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+
+    let res = val * (1+(j/100));
     
-    }
+    document.write("Resultado: "+res);
+
 }

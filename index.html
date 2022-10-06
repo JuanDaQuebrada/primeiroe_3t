@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro E</title>
-  
-   <script src="estudo.js"></script>
-</head>
-<body>
-    <button onclick="escreva()">Clique Aqui</button> 
-    <button onclick="minhaTabuada()">tabuada</button>
-    <button onclick="quadrado()">quadrado</button>
-    
-    
-</body>
-</html>
+   for(let i = 1; i <= 5; i++){
+        document.write("O quadrado de " + i + " é " + (i*i) + "<br>");
+    }
+}
+
+function calcula(){
+    let val = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+
+    let res = val * (1+(j/100));
+
+    document.write("Resultado: "+res);

@@ -8,7 +8,7 @@ body {
 
 background: rgb(109, 157, 230);
 width: 200px;
-color: rgb(0, 0, 0);
+color: rgb(161, 108, 108);
 padding: 15px;
 text-align: center;
 box-shadow: 2px 2px rgb(65, 106, 240);
@@ -16,6 +16,19 @@ box-shadow: 2px 2px rgb(65, 106, 240);
 .calculadora input{
     background: rgb(175, 143, 201);
     color: rgb(0, 0, 0);
+}
+.calcF {
+    display: none;
+}
+#calcFin{
+    display: none;
+}
+#calcFin:checked + .calculadora .calcF {
+    display: block;
+}
+.calculadora input:focus{
+    background: white;
+    color: black;
 }
 #psTotal {
 background: rgb(47, 113, 175);

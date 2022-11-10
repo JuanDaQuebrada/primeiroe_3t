@@ -11,19 +11,47 @@
 </head>
 
 <body>
+  <input type="checkbox" id="calcFin">
   <div class="calculadora">
-    <div id="psTotal">
-      <span id="total">Total: 0,00</span><br>
-    </div>
-    Valor: <input id="valor" placeholder="Digite o Capital" type="text"><br>
-    Juros(Mensal): <input id="juros" placeholder="Digite os Juros (mensal)" type="text"><br>
-    Nr. Meses: <input id="meses" placeholder="Digite o Tempo (meses)" type="text"><br>
-    <button id="btnCalc" onclick="calcula()">Enviar</button><br>
-    <div class="spmes">
-      <span id="mes">Mês a Mês</span>
+
+    <label for="calcFin">
+      <h3>Financeira</h3>
+    </label>
+    
+    <div class="calcF">
+      <div id="psTotal">
+        <span id="total">Total: 0,00</span><br>
+      </div>
+      Valor: <input id="valor" placeholder="Digite o Capital" type="text"><br>
+      Juros(Mensal): <input id="juros" placeholder="Digite os Juros (mensal)" type="text"><br>
+      Nr. Meses: <input id="meses" placeholder="Digite o Tempo (meses)" type="text"><br>
+      <button id="btnCalc" onclick="calcula()">Enviar</button><br>
+      <div class="spmes">
+        <span id="mes">Mês a Mês</span>
+      </div>
     </div>
   </div>
 
+  <input type="checkbox" id="calcESG">
+  <div class="calculadoraESG">
+
+    <label for="calESG">
+      <h3>Equação<br>Segundo Grau</h3>
+    </label>
+    
+    <div class="calcE">
+      <div id="psRaiz">
+        <span id="raiz">x1 e x2</span><br>
+      </div>
+      a:<input id="valor" placeholder="Digite a" type="text"><br>
+      b:<input id="juros" placeholder="Digite b" type="text"><br>
+      c:<input id="meses" placeholder="Digite c" type="text"><br>
+      <button id="btnCalc" onclick="calculaESG()">Calcula</button><br>
+      <div class="spmes">
+        <span id="mes">Mês a Mês</span>
+      </div>
+    </div>
+  </div>
   <br><br><br>
 
   Nota 1: <input id="t1" type="text"><br>
